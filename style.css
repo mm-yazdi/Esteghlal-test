@@ -111,9 +111,10 @@ body{
 }
 .article-items{
     width: 400px;
-    height: 200px;
+    height: 350px;
     
 }
+
 .news-img{
     width: 100%;
     height: 80%;
@@ -129,8 +130,9 @@ body{
 
 .news-title{
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font: bolder;
+    
 }
 a{
     text-decoration: none;
@@ -152,6 +154,9 @@ a{
     width: 100%;
     justify-content: space-around;
 
+}
+.match-container :first-child{
+    font-size: 1.5rem;
 }
 .match-container{
     text-align: right;
