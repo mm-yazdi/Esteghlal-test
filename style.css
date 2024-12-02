@@ -28,9 +28,8 @@ body{
     
 }
 /* navbar */
-.nav-div{
-    position: fixed;
-}
+
+
 .navbar-icon{
     font-size: 2rem;
     color: var(--mainblue);
@@ -54,6 +53,7 @@ body{
     margin-left: 4px;
    
 }
+
 .nav-icon:hover{
     color: var(--mainblack);
 }
@@ -89,7 +89,7 @@ body{
         transform: scale(1);
     }
 }
-.title{
+.title-header{
     background: rgb(0,0,0,0.4, green, blue);
     border-right: 0.1em solid var(--mainblue);
 } 
@@ -210,6 +210,7 @@ a{
 .my-main{
     background-color: #292f36;
     clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 50% 2%, 100% 0%);
+    height: auto;
 }
 .titres{
     color: var(--mainwhite);
@@ -221,6 +222,7 @@ a{
     display: flex;
     justify-content: center;
     margin: auto;
+    flex-wrap: wrap;
 }
 .player-items{
     height: 400px;
@@ -257,3 +259,59 @@ a{
 
 
 /* players end */
+
+/* trophies */
+.trophies-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.trophies-list > li{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    flex-flow:wrap column;
+    justify-content: center;
+
+
+}
+.trophies-list{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    
+    width: 100%;
+    
+}
+.title{
+    font-size: 2rem;
+}
+
+/* trophies end */
+/* sponsers */
+
+.sponsers{
+    background-color: #292f36;
+    display: flex;
+    justify-content: center;
+}
+.sponsers-container{
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+/* sponsers end */
+/* footer */
+.footer-container{
+    width: 100%;
+    background-color: #21252b;
+    height: 100%;
+}
+.icon-contacts{
+    font-size: 2rem;
+}
+/* footer end */
