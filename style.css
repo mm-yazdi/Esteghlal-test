@@ -1,0 +1,259 @@
+:root{
+    --mainblue:#40acf1;
+    --transparentblue:rgba(64,172,241,0.7);
+    --mainwhite:#ffffff;
+    --mainblack:#292f36;
+    --maingrey:rgb(216,214,214);
+}
+*{
+
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: IranSans;
+    src: url(fonts/IRANSansWeb.ttf) format(truetype);
+    src: url(fonts/IRANSansWeb.eot) format(eot);
+    src: url(fonts/IRANSansWeb.woff) format(woff);
+    src: url(fonts/IRANSansWeb.woff2) format(woff2);
+
+}
+body{
+    font-family: 'IranSans',Arial, Helvetica, sans-serif;
+    color: var(--mainblack);
+    background-color: var(--mainwhite);
+    direction: rtl !important;
+    
+    
+}
+/* navbar */
+.nav-div{
+    position: fixed;
+}
+.navbar-icon{
+    font-size: 2rem;
+    color: var(--mainblue);
+}
+.navbar-toggler{
+    outline-color: var(--mainblue);
+}
+.nav-link{
+    color: var(--mainblack);
+    text-transform: capitalize;
+}
+.nav-link:hover{
+    color: var(--mainblue);
+}
+.nav-icon{
+    font-size: 1.5rem;
+    color: var(--mainblue);
+    text-decoration: none !important;
+    transition: color  linear 1s;
+    
+    margin-left: 4px;
+   
+}
+.nav-icon:hover{
+    color: var(--mainblack);
+}
+/* navbar end */
+/* ---------------------------------------------------------------------------------------- */
+/* Header */
+.header{
+    color: var(--mainwhite);
+    clip-path: polygon(0 0,100% 0,100% 95%,50% 100%, 0 95%);
+    overflow: hidden;
+
+}
+
+.height-max{
+    background: url(images/Esteghlal.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment:fixed ;
+    
+    animation-name: zoom;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2) translateX(-5%);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.title{
+    background: rgb(0,0,0,0.4, green, blue);
+    border-right: 0.1em solid var(--mainblue);
+} 
+/* Header end */
+/* news */
+.container-page{
+    width: 90%;
+    display: flex;
+    margin: auto;
+}
+.sec-news{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    
+    
+}
+.article-items{
+    width: 400px;
+    height: 200px;
+    
+}
+.news-img{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+.news-img:hover{
+    transform: scale(1.015);
+
+}
+
+
+.news-title{
+    text-align: center;
+    font-size: 1rem;
+    font: bolder;
+}
+a{
+    text-decoration: none;
+    color: #292f36;
+}
+/* news end */
+/* matches */
+.matches-div{
+    height: 340px;
+    width: 350px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 10px;
+    background-color: #eeeeee;
+    margin: 10px;
+}
+.sec-matches{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+
+}
+.match-container{
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+.match-container > img{
+    margin-right: auto;
+}
+.match-container > p{
+    margin: 15px 5px;
+}
+.teams{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: start;
+    background-color: black;
+}
+.logo-leage{
+    width: 60px;
+    height: 60px;
+}
+.nokhbegan{
+    margin-top: 5px;
+}
+.divider{
+    border-top: 1px solid #ddd;
+}
+.buy-ticket-div{
+    width: 95%;
+    
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    align-content: end;
+    height: 70px;
+    align-items: end;
+}
+.my-ticket-btn{
+    height: 60px;
+    visibility: hidden;
+}
+.matches-div:hover{
+    .my-ticket-btn{
+        visibility: visible;
+    }
+}
+.my-ticket-btn[disabled]:hover{
+    cursor: not-allowed;
+}
+.my-ticket-btn:hover{
+    cursor: pointer;
+}
+/* mtches end */
+.my-main{
+    background-color: #292f36;
+    clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 50% 2%, 100% 0%);
+}
+.titres{
+    color: var(--mainwhite);
+}
+/* players */
+.players-container{
+    width: 90%;
+    height: 430px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.player-items{
+    height: 400px;
+    width: 350px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 10px;
+    background-color: #eeeeee;
+    margin: 10px;
+    position: relative;
+}
+.player-image{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    border-radius: 40%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.player-number{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.season-text{
+    color: #aaa;
+    font-size: 0.9rem;
+}
+.stat-line{
+    border-bottom:1px solid #ddd ;
+    margin-bottom: 10px;
+    padding: bottom 10px; ;
+
+}
+
+
+/* players end */
