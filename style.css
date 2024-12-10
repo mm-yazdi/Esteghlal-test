@@ -30,6 +30,9 @@ body{
 /* navbar */
 
 
+
+
+
 .navbar-icon{
     font-size: 2rem;
     color: var(--mainblue);
@@ -40,23 +43,12 @@ body{
 .nav-link{
     color: var(--mainblack);
     text-transform: capitalize;
+    font-size: 1.2rem;
 }
 .nav-link:hover{
     color: var(--mainblue);
 }
-.nav-icon{
-    font-size: 1.5rem;
-    color: var(--mainblue);
-    text-decoration: none !important;
-    transition: color  linear 1s;
-    
-    margin-left: 4px;
-   
-}
 
-.nav-icon:hover{
-    color: var(--mainblack);
-}
 /* navbar end */
 /* ---------------------------------------------------------------------------------------- */
 /* Header */
@@ -105,6 +97,7 @@ body{
     width: 90%;
     display: flex;
     margin: auto;
+    justify-content: space-between;
 }
 .sec-news{
     
@@ -112,29 +105,40 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     height: auto;
-    
+    margin: auto;
     
 }
 .article-items{
-    width: 390px;
+    width: 260px;
     height: 350px;
     border-radius: 10px;
-   
+    background-color: #e2e2e2;
+    
 }
 
 .news-img{
     width: 100%;
-    height: 80%;
+    height: 70%;
     overflow: hidden;
     transition: transform 0.3s ease;
-    border-radius: 10px;
+    border-radius: 5px;
 }
-.news-img:hover{
-    transform: scale(1.015);
+.article-items:hover{
+ 
+    transform: scale(1.01115); 
+    box-shadow: 3px 3px 7px 5px #cccccc;;
+     
 
 }
-
-
+a:hover{
+    text-decoration: none;
+}
+.time-news{
+    font-size: 0.90rem;
+}
+.news-titr{
+    font-size: 1.25rem;
+}
 .news-title{
     text-align: center;
     font-size: 1.2rem;
@@ -227,9 +231,18 @@ a{
     background-color: #292f36;
     clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 50% 2%, 100% 0%);
     height: auto;
+    padding-bottom: 70px;
+}
+@media screen and (max-width:826px) {
+    .my-main{
+        clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 50% 0.5%, 100% 0%);
+    }
+   
+    
 }
 .titres{
     color: var(--mainwhite);
+    
 }
 /* players */
 .players-container{
@@ -293,6 +306,9 @@ a{
 
 
 }
+.trophis-titr{
+    color: #292f36;
+}
 .trophies-list{
     display: flex;
     flex-flow: wrap row;
@@ -313,25 +329,44 @@ a{
 /* sponsers */
 
 .sponsers{
-    background-color: #292f36;
+    background-color: #292f36; 
+    
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .sponsers-container{
     width: 90%;
     align-items: center;
     justify-content: space-between;
     display: flex;
+    flex-wrap:wrap;
+    margin: auto;
 }
-
+.sponser-items{
+    margin: auto;
+}
 /* sponsers end */
 /* footer */
-.footer-container{
+.footer-container{  
     width: 100%;
-    background-color: #21252b;
+    background-color: #445774;
     height: 100%;
 }
 .icon-contacts{
     font-size: 2rem;
 }
+.test-bg{
+    background-color: #2563eb;
+}
+.copyright{
+    color: #292f36;
+}
+.copyright:hover{
+    color: #232629;
+    text-decoration: none;
+}
+
 /* footer end */
